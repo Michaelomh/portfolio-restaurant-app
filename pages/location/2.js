@@ -18,7 +18,7 @@ export default function LocationTwo() {
 
   return (
     <Layout>
-      <Image className="-z-10" width={1280} layout="responsive" src={menuHero} />
+      <Image className="-z-10" width={1280} layout="responsive" alt="image of our food" src={menuHero} />
       <div className="flex container mx-auto">
         <aside className="md:w-1/3 p-12 md:block hidden">
           <MenuNavigation click={() => tappetizersRef.current.scrollIntoView({ behavior: "smooth" })}>

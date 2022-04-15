@@ -16,7 +16,7 @@ export default function HomeFoodCatalogTwo() {
         className="w-full md:w-5/12 h-[250px] md:h-[400px] relative mb-4 md:mr-4"
       >
         <h2 className="home__imageCaption bottom-10 left-10">Philly Cheesesteak</h2>
-        <Image layout="fill" objectFit="cover" src={philly} />
+        <Image layout="fill" objectFit="cover" alt="image of our Philly Cheesesteak" src={philly} />
       </motion.div>
       <motion.div
         variants={slideRight}
@@ -26,7 +26,7 @@ export default function HomeFoodCatalogTwo() {
         className="w-full md:w-7/12 h-[250px] md:h-[400px] relative"
       >
         <h2 className="home__imageCaption bottom-10 left-10">BBQ Chicken</h2>
-        <Image layout="fill" objectFit="cover" src={pizza} />
+        <Image layout="fill" objectFit="cover" alt="image of our BBQ Chicken Pizza" src={pizza} />
       </motion.div>
     </section>
   );

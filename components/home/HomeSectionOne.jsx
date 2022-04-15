@@ -15,7 +15,7 @@ export default function HomeSectionOne() {
         viewport={{ once: true }}
         className="w-full md:w-1/4 h-[250px] md:h-[700px] relative -z-10"
       >
-        <Image layout="fill" objectFit="cover" src={bartender} />
+        <Image layout="fill" objectFit="cover" alt="Image of our bartender" src={bartender} />
       </motion.div>
 
       <motion.div
@@ -26,7 +26,7 @@ export default function HomeSectionOne() {
         className="w-full md:w-1/4 p-6 md:p-12 flex justify-center flex-col break-words"
       >
         <h1 className="header text-5xl">Food and beer lovers come together</h1>
-        <h2 className="header text-2xl text-red-700 tracking-wider mt-4">Life's just better at Blast</h2>
+        <h2 className="header text-2xl text-red-700 tracking-wider mt-4">Life&apos;s just better at Blast</h2>
       </motion.div>
       <motion.div
         variants={slideRight}
@@ -35,7 +35,7 @@ export default function HomeSectionOne() {
         viewport={{ once: true }}
         className="w-full md:w-1/2 h-[250px] md:h-[700px] relative -z-10"
       >
-        <Image layout="fill" objectFit="cover" src={blastRight} />
+        <Image layout="fill" objectFit="cover" alt="Customers" src={blastRight} />
       </motion.div>
     </section>
   );

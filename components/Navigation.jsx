@@ -62,8 +62,8 @@ export default function Navigation() {
     <header className="w-full flex justify-center items-center bg-white h-14 ">
       <div className="flex container justify-between items-center px-8">
         <div className="w-2/5 hover:cursor-pointer">
-          <Link href="/">
-            <Image width="210px" height="20px" src={logo} />
+          <Link href="/" passHref>
+            <Image width="210px" height="20px" alt="Company logo" src={logo} />
           </Link>
         </div>
         <div className="w-3/5 max-w-[500px]">

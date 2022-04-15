@@ -16,7 +16,12 @@ export default function HomeSectionTwo() {
       >
         <h2 className="home__imageCaption bottom-28 left-10">Bavariyan Pretzel</h2>
         <h2 className="home__imageCaption top-64 right-10">Caprese Skewers</h2>
-        <Image layout="fill" objectFit="cover" src={bavarianpretzel} />
+        <Image
+          layout="fill"
+          objectFit="cover"
+          alt="image of our Bavariyan Pretzel and Caprese Skewers"
+          src={bavarianpretzel}
+        />
       </motion.div>
 
       <motion.div

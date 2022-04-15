@@ -8,7 +8,7 @@ export default function Footer() {
     <footer className="w-full flex justify-center bg-black">
       <div className="flex flex-col container justify-between items-center py-8 sm:flex-row">
         <div>
-          <Image width="250px" height="50px" src={logoFooter} />
+          <Image width="250px" height="50px" src={logoFooter} alt="Company logo (White)" />
         </div>
         <div className="flex flex-row items-center">
           <span className="text-white uppercase m-0 font-bold text-sm font-heading tracking-[4px]">

@@ -10,7 +10,7 @@ export default function ContactUs() {
   return (
     <Layout>
       <motion.section variants={fadeIn} initial="initial" whileInView="whileInView" viewport={{ once: true }}>
-        <Image className="-z-10" width={1280} layout="responsive" src={contact1} />
+        <Image className="-z-10" width={1280} layout="responsive" alt="Image of our logo" src={contact1} />
       </motion.section>
 
       <Spacer height="100px" />

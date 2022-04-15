@@ -15,7 +15,7 @@ export default function HomeSectionThree() {
         viewport={{ once: true }}
         className="w-full md:w-1/4 h-[350px] md:h-[700px] relative -z-10"
       >
-        <Image layout="fill" objectFit="cover" src={beerPour} />
+        <Image layout="fill" objectFit="cover" alt="Beer pouring image" src={beerPour} />
       </motion.div>
       <motion.div
         variants={slideUp}
@@ -38,7 +38,7 @@ export default function HomeSectionThree() {
         viewport={{ once: true }}
         className="w-full md:w-1/2 h-[300px] md:h-[700px] relative -z-10"
       >
-        <Image layout="fill" objectFit="cover" src={beers} />
+        <Image layout="fill" objectFit="cover" alt="Beer image" src={beers} />
       </motion.div>
     </section>
   );

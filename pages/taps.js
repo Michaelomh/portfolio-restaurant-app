@@ -30,8 +30,8 @@ export default function Taps() {
           <span className="text-1xl leading-8">
             Local craft beer just hits different. We have over 23+ craft beers, ciders and wine on tap from local and
             regional breweries like Beaver Brewery, Acme Brewery, and ACME Brewing Co. With our self-pour tap
-            technology, you don't have to wait for a bartender. Control your pour, so you can sample what you want or
-            have a few pints of your favorite draft.
+            technology, you don&apos;t have to wait for a bartender. Control your pour, so you can sample what you want
+            or have a few pints of your favorite draft.
           </span>
         </motion.div>
         <motion.div
@@ -41,7 +41,7 @@ export default function Taps() {
           viewport={{ once: true }}
           className="w-full md:w-1/3  h-[600px] relative mr-4"
         >
-          <Image layout="fill" objectFit="cover" src={taps1} />
+          <Image layout="fill" objectFit="cover" alt="Image of people pouring their own beer" src={taps1} />
         </motion.div>
         <motion.div
           variants={slideRight}
@@ -50,7 +50,7 @@ export default function Taps() {
           viewport={{ once: true }}
           className="w-full md:w-1/3 h-[600px] relative px-8"
         >
-          <Image layout="fill" objectFit="cover" src={taps2} />
+          <Image layout="fill" objectFit="cover" alt="Image of people pouring their own beer" src={taps2} />
         </motion.div>
       </section>
 

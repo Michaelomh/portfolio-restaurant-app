@@ -34,7 +34,7 @@ export default function GiftCards() {
           viewport={{ once: true }}
           className="w-full md:w-2/3 md:mr-4 p-8 -z-10"
         >
-          <Image layout="responsive" objectFit="cover" src={gift1} />
+          <Image layout="responsive" objectFit="cover" alt="Image of our gift card" src={gift1} />
         </motion.div>
       </section>
 

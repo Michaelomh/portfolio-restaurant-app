@@ -12,7 +12,7 @@ export default function Careers() {
   return (
     <Layout>
       <motion.section variants={fadeIn} initial="initial" whileInView="whileInView" viewport={{ once: true }}>
-        <Image height="350px" layout="responsive" className="-z-10" src={careerHero} />
+        <Image height="350px" layout="responsive" className="-z-10" alt="Image of our employees" src={careerHero} />
       </motion.section>
 
       <Spacer height="75px" />
@@ -134,7 +134,7 @@ export default function Careers() {
           className="md:w-1/2 w-full p-8"
         >
           <div className="w-full h-[600px] relative mr-4 -z-10">
-            <Image layout="fill" objectFit="cover" src={career1} />
+            <Image layout="fill" objectFit="cover" alt="Image of our employee working" src={career1} />
           </div>
           <div className="center mt-12">
             <h1 className="header text-5xl text-center pb-16">Open Positions</h1>
