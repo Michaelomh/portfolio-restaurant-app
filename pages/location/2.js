@@ -5,7 +5,6 @@ import Image from "next/image";
 import MenuHeader from "../../components/menu/menuHeader";
 import MenuNavigation from "../../components/menu/menuNavigation";
 import MenuItem from "../../components/menu/menuItem";
-import menuHero from "../../assets/images/menu/menu_header.jpg";
 
 export default function LocationTwo() {
   const tappetizersRef = useRef();
@@ -18,7 +17,14 @@ export default function LocationTwo() {
 
   return (
     <Layout>
-      <Image className="-z-10" width={1280} layout="responsive" alt="image of our food" src={menuHero} />
+      <Image
+        className="-z-10"
+        width={1280}
+        height={360}
+        layout="responsive"
+        alt="image of our food"
+        src="/images/menu/menu_header.jpg"
+      />
       <div className="flex container mx-auto">
         <aside className="md:w-1/3 p-12 md:block hidden">
           <MenuNavigation click={() => tappetizersRef.current.scrollIntoView({ behavior: "smooth" })}>

@@ -1,5 +1,4 @@
 import Image from "next/image";
-import homeHero from "../../assets/images/home/hero_featured.jpg";
 
 export default function HomeHero() {
   return (
@@ -13,8 +12,8 @@ export default function HomeHero() {
           className="-z-20"
           layout="fill"
           objectFit="cover"
-          alt="Homepaeg hero image of our burgers"
-          src={homeHero}
+          alt="Homepage hero image of our burgers"
+          src="/images/home/hero_featured.jpg"
         />
       </div>
     </section>

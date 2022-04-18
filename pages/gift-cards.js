@@ -2,7 +2,6 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 import Layout from "../components/Layout";
-import gift1 from "../assets/images/gift-cards/gift-1.png";
 import { fadeIn, slideRight } from "../components/FramerMotionVariants";
 
 export default function GiftCards() {
@@ -32,9 +31,9 @@ export default function GiftCards() {
           initial="initial"
           whileInView="whileInView"
           viewport={{ once: true }}
-          className="w-full md:w-2/3 md:mr-4 p-8 -z-10"
+          className="w-full md:w-2/3 h-[250px] md:h-[500px] relative -z-10"
         >
-          <Image layout="responsive" objectFit="cover" alt="Image of our gift card" src={gift1} />
+          <Image layout="fill" objectFit="cover" alt="Customers" src="/images/gift-cards/gift-1.png" />
         </motion.div>
       </section>
 

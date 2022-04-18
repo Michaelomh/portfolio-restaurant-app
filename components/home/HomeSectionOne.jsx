@@ -1,8 +1,6 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-import bartender from "../../assets/images/home/bartender.png";
-import blastRight from "../../assets/images/home/blastRight.jpg";
 import { slideLeft, slideUp, slideRight } from "../../components/FramerMotionVariants";
 
 export default function HomeSectionOne() {
@@ -15,7 +13,7 @@ export default function HomeSectionOne() {
         viewport={{ once: true }}
         className="w-full md:w-1/4 h-[250px] md:h-[700px] relative -z-10"
       >
-        <Image layout="fill" objectFit="cover" alt="Image of our bartender" src={bartender} />
+        <Image layout="fill" objectFit="cover" alt="Image of our bartender" src="/images/home/bartender.png" />
       </motion.div>
 
       <motion.div
@@ -35,7 +33,7 @@ export default function HomeSectionOne() {
         viewport={{ once: true }}
         className="w-full md:w-1/2 h-[250px] md:h-[700px] relative -z-10"
       >
-        <Image layout="fill" objectFit="cover" alt="Customers" src={blastRight} />
+        <Image layout="fill" objectFit="cover" alt="Customers" src="/images/home/blastright.jpg" />
       </motion.div>
     </section>
   );

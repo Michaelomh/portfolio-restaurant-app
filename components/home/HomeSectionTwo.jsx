@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-import bavarianpretzel from "../../assets/images/home/bavarianpretzel.jpg";
 import { slideLeft, slideRight } from "../FramerMotionVariants";
 
 export default function HomeSectionTwo() {
@@ -20,7 +19,7 @@ export default function HomeSectionTwo() {
           layout="fill"
           objectFit="cover"
           alt="image of our Bavariyan Pretzel and Caprese Skewers"
-          src={bavarianpretzel}
+          src="/images/home/bavarianpretzel.jpg"
         />
       </motion.div>
 

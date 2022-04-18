@@ -2,8 +2,6 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 import Layout from "../components/Layout";
-import career1 from "../assets/images/careers/career-01.jpg";
-import careerHero from "../assets/images/careers/career-hero.jpg";
 import Spacer from "../components/Spacer";
 
 import { fadeIn, slideLeft } from "../components/FramerMotionVariants";
@@ -11,8 +9,20 @@ import { fadeIn, slideLeft } from "../components/FramerMotionVariants";
 export default function Careers() {
   return (
     <Layout>
-      <motion.section variants={fadeIn} initial="initial" whileInView="whileInView" viewport={{ once: true }}>
-        <Image height="350px" layout="responsive" className="-z-10" alt="Image of our employees" src={careerHero} />
+      <motion.section
+        className="-z-10 md:block hidden"
+        variants={fadeIn}
+        initial="initial"
+        whileInView="whileInView"
+        viewport={{ once: true }}
+      >
+        <Image
+          width={1280}
+          height={360}
+          layout="responsive"
+          alt="image of our food"
+          src="/images/careers/career-hero.jpg"
+        />
       </motion.section>
 
       <Spacer height="75px" />
@@ -134,7 +144,12 @@ export default function Careers() {
           className="md:w-1/2 w-full p-8"
         >
           <div className="w-full h-[600px] relative mr-4 -z-10">
-            <Image layout="fill" objectFit="cover" alt="Image of our employee working" src={career1} />
+            <Image
+              layout="fill"
+              objectFit="cover"
+              alt="Image of our employee working"
+              src="/images/careers/career-01.jpg"
+            />
           </div>
           <div className="center mt-12">
             <h1 className="header text-5xl text-center pb-16">Open Positions</h1>

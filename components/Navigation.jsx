@@ -4,8 +4,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-import logo from "../assets/images/logo.svg";
-
 const top = {
   closed: {
     rotate: 0,
@@ -63,7 +61,7 @@ export default function Navigation() {
       <div className="flex container justify-between items-center px-8">
         <div className="w-2/5 hover:cursor-pointer">
           <Link href="/" passHref>
-            <Image width="210px" height="20px" alt="Company logo" src={logo} />
+            <Image width="210px" height="20px" alt="Company logo" src="/images/logo.svg" />
           </Link>
         </div>
         <div className="w-3/5 max-w-[500px]">

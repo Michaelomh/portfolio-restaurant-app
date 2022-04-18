@@ -2,8 +2,6 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 import { slideLeft, slideUp, slideRight } from "../FramerMotionVariants";
-import beerPour from "../../assets/images/home/beerPour.jpg";
-import beers from "../../assets/images/home/beers.jpg";
 
 export default function HomeSectionThree() {
   return (
@@ -15,7 +13,7 @@ export default function HomeSectionThree() {
         viewport={{ once: true }}
         className="w-full md:w-1/4 h-[350px] md:h-[700px] relative -z-10"
       >
-        <Image layout="fill" objectFit="cover" alt="Beer pouring image" src={beerPour} />
+        <Image layout="fill" objectFit="cover" alt="Beer pouring image" src="/images/home/beerPour.jpg" />
       </motion.div>
       <motion.div
         variants={slideUp}
@@ -38,7 +36,7 @@ export default function HomeSectionThree() {
         viewport={{ once: true }}
         className="w-full md:w-1/2 h-[300px] md:h-[700px] relative -z-10"
       >
-        <Image layout="fill" objectFit="cover" alt="Beer image" src={beers} />
+        <Image layout="fill" objectFit="cover" alt="Beer image" src="/images/home/beers.jpg" />
       </motion.div>
     </section>
   );

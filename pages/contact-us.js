@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-import contact1 from "../assets/images/contact-us/contact1.jpg";
 import Layout from "../components/Layout";
 import Spacer from "../components/Spacer";
 import { fadeIn } from "../components/FramerMotionVariants";
@@ -9,8 +8,20 @@ import { fadeIn } from "../components/FramerMotionVariants";
 export default function ContactUs() {
   return (
     <Layout>
-      <motion.section variants={fadeIn} initial="initial" whileInView="whileInView" viewport={{ once: true }}>
-        <Image className="-z-10" width={1280} layout="responsive" alt="Image of our logo" src={contact1} />
+      <motion.section
+        className="-z-10 md:block hidden"
+        variants={fadeIn}
+        initial="initial"
+        whileInView="whileInView"
+        viewport={{ once: true }}
+      >
+        <Image
+          width={1280}
+          height={360}
+          layout="responsive"
+          alt="image of our food"
+          src="/images/contact-us/contact1.jpg"
+        />
       </motion.section>
 
       <Spacer height="100px" />
